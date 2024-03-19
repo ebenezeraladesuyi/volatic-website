@@ -18,6 +18,10 @@ const Footer = () => {
             Volatic Academy. We are a supportive and inclusive Academy, where every student is inspired to dream big, while challenging them and the status quo, equipping them with business skill, technology skills, leadership skills and life skills.
           </h6>
 
+          <h5 className="text-[12px] lg:text-[14px] text-cente mb-[20px] flex flex-col text-[#50519f]">
+            <span className="text-[#80c41c]">Address:</span>3, Nova Road 3, Adebayo, Ado-Ekiti, Ekiti State  <span className="text-[#80c41c]">Phone:</span> +234 (0) 703 675 0857 || +234 (0) 810 546 2237 <span className="text-[#80c41c]">Email:</span> volaticacademy@gmail.com
+          </h5>
+
           <div className="flex gap-3 items-center">
             <a href="" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
               <FaFacebookF />
