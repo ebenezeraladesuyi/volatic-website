@@ -11,7 +11,7 @@ const Courses = () => {
         <div className="w-[90%] relative flex flex-col flex-wrap lg:flex-row md:justify-between  gap-4 items-center">
             <CourseCard 
                 img={img}
-                title="UI/UX DESIGN"
+                title="PRODUCT DESIGN"
                 details="A process of creating User Interfaces (UI) and enhancing the overall User Experience (UX) when interacting with a product or system. It involves the thoughtful design of visual elements, interactions, and user flows to ensure a seamless, intuitive, and enjoyable experience for the end user. UI design focuses on the look and feel of the interface, including elements such as layout, colors, typography, and imagery. UX design, on the other hand, is concerned with the overall user journey, ensuring that users can easily accomplish their tasks and derive satisfaction from the product."
             />
 

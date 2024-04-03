@@ -23,16 +23,16 @@ const Footer = () => {
           </h5>
 
           <div className="flex gap-3 items-center">
-            <a href="" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
+            <a href="https://facebook.com/volaticacademy" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
               <FaFacebookF />
             </a>
-            <a href="" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
+            <a href="https://twitter.com/volatic24" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
               <FaTwitter />
             </a>
-            <a href="" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
+            <a href="ttps://linkedin.com/volaticacademy" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
               <FaLinkedinIn />
             </a>
-            <a href="" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
+            <a href="https://volaticacademy@gmail.com" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
               <MdAttachEmail />
             </a>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
 
         <div className="flex flex-col font-semibold gap-3 text-[13px] md:text-[15px] text-[#50519f] md:ml-[30px]">
           <h6 className="cursor-pointr mb-[20px] text-[16px] md:text-[18px] font-bold md:mt-[20px]">Services</h6>
-          <h6 className="cursor-pointr">UI/UX Design</h6>
+          <h6 className="cursor-pointr">Product Design</h6>
           <h6 className="cursor-pointe">Product Engineering</h6>
           <h6 className="cursor-pointr">Product Strategy</h6>
           <h6 className="cursor-pointr">Creative Design</h6>

@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import logo from "../../assets/images/vol.png";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 
-    const [dropdown, setDropdown] = React.useState(false)
+    const [dropdown, setDropdown] = useState(false)
 
     const showDropdown = () => {
         setDropdown(!dropdown)
@@ -17,7 +17,7 @@ const Header = () => {
     <div className="w-full h-[70px] flex justify-center items-center shadow-m font-pop fixed z-40 bg-transparent text-white">
         <div className="w-[90%] h-full flex justify-between items-center ">
 
-            <img className="w-[40px] md:w-[50px] relative z-40" src={logo} alt="W2H-logo" />
+            <img className="w-[40px] md:w-[50px] relative z-40" src={logo} alt="volatic-logo" />
 
             <div className=''>
                 <li className="hidden lg:flex items-center gap-5 text-[15px] transition-all duration-500 ease-in-out">
@@ -26,7 +26,7 @@ const Header = () => {
                             <ol className='text-white hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Home</ol>
                         </NavLink>
 
-                        <NavLink to='/'>
+                        <NavLink to='/courses'>
                             <ol className='text-white  hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Courses</ol>
                         </NavLink>
 
@@ -76,7 +76,7 @@ const Header = () => {
                         <ol className='text-white hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Home</ol>
                     </NavLink>
 
-                    <NavLink to='/'>
+                    <NavLink to='/courses'>
                         <ol className='text-white  hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Courses</ol>
                     </NavLink>
 

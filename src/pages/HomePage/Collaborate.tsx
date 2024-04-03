@@ -14,11 +14,11 @@ const Collaborate = () => {
                 <h4 className="text-[20px] lg:text-[27px] font-bold text-center md:text-left">COLLABORATE WITH US..</h4>
 
                 <h6 className="text-[13px] lg:text-[16px] text-justify">
-                    We are committed to helping many young Nigerians, especially those with limited resources and lower income communities, kick start a career in Technology by providing them with access to quality technical education that makes them equipped with global talents and re-inventing themselves towards a bigger and better tomorrow, making them useful to themselves, their families and the society at large. 
+                    We are committed to helping many young Nigerians, especially those with limited resources and lower income communities, kick start a career in Technology by providing them with access to quality technical education that makes them equipped with global talents and re-inventing themselves towards a bigger and better tomorrow, making them useful to themselves, their families and the society at large. <br /><span className="mt-[10px] font-bold">Are you Interested in inspiring the next generation of top Software Engineers? </span> 
                 </h6>
 
                 <button className="p-3 bg-[#00AFEF] text-white hover:bg-[#50519f] border-none lg:mt-[20px]">
-                    Contact Us
+                    Support Us
                 </button>
             </div>
         </div>
