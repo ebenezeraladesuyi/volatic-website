@@ -101,6 +101,13 @@ const Testimonies = () => {
                 quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa, adipisci aliquid corporis consectetur deleniti perspiciatis minima provident tempore earum et dolorem accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa."
             />
 
+            <TestiCard2 
+                image={dan}
+                name="Princewill Ibekwe"
+                title="Product Designer"
+                quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa, adipisci aliquid corporis consectetur deleniti perspiciatis minima provident tempore earum et dolorem accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa."
+            />
+
           </div>
           
       </div>

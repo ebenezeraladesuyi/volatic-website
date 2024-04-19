@@ -8,9 +8,9 @@ import img1 from "../../assets/partners/Artboard 14 copy-80 - Copy.jpg"
 import img2 from "../../assets/partners/ekiti-logo.jpg"
 import img3 from "../../assets/partners/iStand-Logo.png"
 import img4 from "../../assets/partners/swys-logo.png"
-// import img5 from "../../assets/images/5.svg"
+import img5 from "../../assets/partners/logo1.jpg";
 import img6 from "../../assets/partners/3.svg"
-import img8 from "../../assets/partners/DWC-Logo.png"
+import img7 from "../../assets/partners/DWC-Logo.png"
 import PartnersCard from "../../components/static/PartnersCard";
 
 const Partners = () => {
@@ -67,7 +67,6 @@ const Partners = () => {
                     <PartnersCard 
                         imag={img1}
                     />
-
                     <PartnersCard 
                         imag={img2}
                     />
@@ -77,18 +76,15 @@ const Partners = () => {
                     <PartnersCard 
                         imag={img4}
                     />
-                    {/* <PartnersCard 
+                    <PartnersCard 
                         imag={img5}
-                    /> */}
+                    />
                     <PartnersCard 
                         imag={img6}
                     />
                     <PartnersCard 
-                        imag={img8}
+                        imag={img7}
                     />
-                    {/* <PartnersCard 
-                        imag={img8}
-                    /> */}
 
 
                 </Slider>

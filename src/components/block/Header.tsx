@@ -37,7 +37,7 @@ const Header = () => {
                         </NavLink>
 
                         {/* <Link offset={-100} smooth={true} duration={500} to="testimonies"> */}
-                            <ol className='text-white  hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Hire Our Talent</ol>
+                            {/* <ol className='text-white  hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Hire Our Talent</ol> */}
                         {/* </Link> */}
 
                         <NavLink to='/contact'>
@@ -87,7 +87,7 @@ const Header = () => {
                     </NavLink>
 
                     {/* <Link offset={-100} smooth={true} duration={500} to="testimonies"> */}
-                        <ol className='text-white  hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Hire Our Talent</ol>
+                        {/* <ol className='text-white  hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Hire Our Talent</ol> */}
                     {/* </Link> */}
                     
                     <NavLink to='/contact'>
