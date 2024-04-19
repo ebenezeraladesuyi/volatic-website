@@ -29,7 +29,7 @@ const Footer = () => {
             <a href="https://twitter.com/volatic24" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
               <FaTwitter />
             </a>
-            <a href="ttps://linkedin.com/volaticacademy" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
+            <a href="https://linkedin.com/volaticacademy" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">
               <FaLinkedinIn />
             </a>
             <a href="https://volaticacademy@gmail.com" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center text-[#00AFEF] border-[#00AFEF] rounded-full">

@@ -6,6 +6,8 @@ import HomeLayout from "../layout/HomeLayout"
 import ContactLayout from "../layout/ContactLayout";
 import CoursesLayout from "../layout/CoursesLayout";
 import RegisterPageLayout from "../layout/RegisterLayout";
+import WhyLayout from "../layout/WhyLayout";
+// import WhyVolatic from "../pages/whyVolatic/WhyVolatic";
 // import Register from "../pages/register/Register";
 // import CourseComp from "../pages/courses/CourseComp";
 // import Contact from "../pages/contact/Contact";
@@ -15,6 +17,7 @@ const HomeComp = lazy(() => import("../pages/HomePage/HomeComp"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
 const CourseComp = lazy(() => import("../pages/courses/CourseComp"));
 const Register = lazy(() => import("../pages/register/Register"));
+const WhyVolatic = lazy(() => import("../pages/whyVolatic/WhyVolatic"));
 
 
 export const element = createBrowserRouter([
@@ -55,6 +58,16 @@ export const element = createBrowserRouter([
             {
                 index: true,
                 element: <Register />
+            }
+        ]
+    },
+    {
+        path: "/whyvolatic",
+        element: <WhyLayout />,
+        children: [
+            {
+                index: true,
+                element: <WhyVolatic />
             }
         ]
     },

@@ -4,11 +4,12 @@ import CourseCard from "../../components/static/CourseCard"
 import img from "../../assets/images/ui-ux.png";
 import img1 from "../../assets/images/frontend.png";
 import img2 from "../../assets/images/backend.png";
+import { NavLink } from "react-router-dom";
 
 const Courses = () => {
   return (
-    <div className="w-full h-[] py-[40px] overflow-hidden flex justify-center items-center bg-[#f9f6f6] ">
-        <div className="w-[90%] relative flex flex-col flex-wrap lg:flex-row md:justify-between  gap-4 items-center">
+    <div className="w-full h-[] py-[40px] overflow-hidden flex flex-col justify-center items-center bg-[#f9f6f6] gap-6">
+        <div className="w-[90%] relative flex flex-col flex-wrap lg:flex-row md:justify-between  gap-4 items-center justify-center">
             <CourseCard 
                 img={img}
                 title="PRODUCT DESIGN"
@@ -29,6 +30,12 @@ const Courses = () => {
                 "
             />
         </div>
+
+        <NavLink to='/courses'>
+            <button className="bg-[#00AFEF] text-white animate-pulse border-none hover:border-none">
+                All Courses
+            </button>
+        </NavLink>
     </div>
   )
 }

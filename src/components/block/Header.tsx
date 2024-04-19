@@ -17,7 +17,9 @@ const Header = () => {
     <div className="w-full h-[70px] flex justify-center items-center shadow-m font-pop fixed z-40 bg-transparent text-white">
         <div className="w-[90%] h-full flex justify-between items-center ">
 
-            <img className="w-[40px] md:w-[50px] relative z-40" src={logo} alt="volatic-logo" />
+            <NavLink to="/">
+                <img className="w-[40px] md:w-[50px] relative z-40" src={logo} alt="volatic-logo" />
+            </NavLink>
 
             <div className=''>
                 <li className="hidden lg:flex items-center gap-5 text-[15px] transition-all duration-500 ease-in-out">
@@ -30,7 +32,7 @@ const Header = () => {
                             <ol className='text-white  hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Courses</ol>
                         </NavLink>
 
-                        <NavLink to='/'>
+                        <NavLink to='/whyvolatic'>
                             <ol className='text-white  hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Why Volatic</ol>
                         </NavLink>
 
@@ -80,7 +82,7 @@ const Header = () => {
                         <ol className='text-white  hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Courses</ol>
                     </NavLink>
 
-                    <NavLink to='/'>
+                    <NavLink to='/whyvolatic'>
                         <ol className='text-white  hover:text-[#80c41c] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Why Volatic</ol>
                     </NavLink>
 
