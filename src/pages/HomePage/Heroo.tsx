@@ -2,6 +2,7 @@
 
 import Typewriter from 'typewriter-effect';
 import { motion } from "framer-motion";
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -52,13 +53,15 @@ const Hero = () => {
                 Launch your Tech journey with Volatic Academy where innovation meets education.
             </motion.h4>
 
-            <motion.button className="w-[160px] mt-[20px] bg-[#00AFEF]  hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out" 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.9 }}
-            >
-                Apply Now
-            </motion.button>
+            <NavLink to="/register">
+                <motion.button className="w-[160px] mt-[20px] bg-[#00AFEF]  hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out" 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.9 }}
+                >
+                    Apply Now
+                </motion.button>
+            </NavLink>
 
         </div>
 
