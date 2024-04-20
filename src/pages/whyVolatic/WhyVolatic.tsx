@@ -26,7 +26,7 @@ const WhyVolatic = () => {
                         Lots of organization tell you what they can/will do for you, but at <span className="font-bold text-[#00AFEF]">Volatic Academy</span>, we  tell you <span className="font-bold text-[#00AFEF]">what you can do for you, what you can build for you, and what you can earn for you.</span> We join you, to challenge the status quo, to challenge the norm.
                     </p>
                     <p>
-                        By leveraging on modern technological software skils, we are loaded and ready to <span className="font-bold text-[#00AFEF]">hold you by the hand, and lead you through your journey towards attaining a global skill,</span> that not just put you on the map as an intrigue in your community, but nationally and globally. 
+                        By leveraging on modern technological software skills, we are loaded and ready to <span className="font-bold text-[#00AFEF]">hold you by the hand, and lead you through your journey towards attaining a global skill,</span> that not just put you on the map as an intrigue in your community, but nationally and globally. 
                     </p>
                 </h5>
             </div>
@@ -37,7 +37,7 @@ const WhyVolatic = () => {
 
                 <h5 className="text-justify text-[14px] md:text-[16px] w-full md:w-[50%] lg:text-[20px]">
                     <p className="mb-[10px]">
-                        We believe that creating the next big Techie start from a search through the grassroot, mostly at rural areas. We are not creating your solution for you; we are giving you the tools and skills to create your own solution; because <span className="font-bold text-[#00AFEF]">no one understands your challenges, no one has lived through your challenges, no on sees a better solution to these challenges, as much as you.</span> We are creating an atmosphere where "the sons and daughters of nobody can become somebody, without knowing anybody."
+                        We believe that creating the next big Techie start from a search through the grassroot, mostly at rural areas. We are not creating your solution for you; we are giving you the tools and skills to create your own solution; because <span className="font-bold text-[#00AFEF]">no one understands your challenges, no one has lived through your challenges, no one sees a better solution to these challenges, as much as you.</span> We are creating an atmosphere where "the sons and daughters of nobody can become somebody, without knowing anybody."
                     </p>
                 </h5>
                 
