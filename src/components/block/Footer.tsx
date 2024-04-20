@@ -19,7 +19,7 @@ const Footer = () => {
           </h6>
 
           <h5 className="text-[12px] lg:text-[14px] text-cente mb-[20px] flex flex-col text-[#50519f]">
-            <span className="text-[#80c41c]">Address:</span>3, Nova Road 3, Adebayo, Ado-Ekiti, Ekiti State  <span className="text-[#80c41c]">Phone:</span> +234 (0) 703 675 0857 || +234 (0) 810 546 2237 <span className="text-[#80c41c]">Email:</span> volaticacademy@gmail.com
+            <span className="text-[#80c41c]">Address:</span>3, Nova Road 3, Adebayo, Ado-Ekiti, Ekiti State  <span className="text-[#80c41c]">Phone:</span> +234 (0) 703 675 0857 || +234 (0) 814 890 5370 <span className="text-[#80c41c]">Email:</span> volaticacademy@gmail.com
           </h5>
 
           <div className="flex gap-3 items-center">
