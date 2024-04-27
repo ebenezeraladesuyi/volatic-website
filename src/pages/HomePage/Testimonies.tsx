@@ -5,10 +5,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TestiCard from "../../components/static/TestiCard";
 // import { FaUser } from "react-icons/fa6";
-import dan from "../../assets/images/Daniel.png";
 import TestiCard2 from "../../components/static/TestiCard2";
 // import RevealOnScroll from "../../components/static/onScroll/RevealOnScroll";
 // import SlideInComponent from "../../components/static/onScroll/SlideIn";
+import stu1 from "../../assets/students/Joe-Vol.png";
+import stu2 from "../../assets/students/Sunday-Vol.png";
+import stu3 from "../../assets/students/micheal-Vol.png";
+import stu4 from "../../assets/images/vol.png";
 
 const Testimonies = () => {
 
@@ -81,31 +84,31 @@ const Testimonies = () => {
           <div className="w-[90%]">
 
             <TestiCard 
-                image={dan}
+                image={stu1}
                 name="Olofinte Joseph"
                 title="Software Engineer"
-                quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa, adipisci aliquid corporis consectetur deleniti perspiciatis minima provident tempore earum et dolorem accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa."
+                quote="I am so glad a disovered Volatic Academy when starting my journey nto Software Engineering. For real, no other place compares. The environment fosters growth and the instructors are kind, taking their time to expalain complex concepts. Thank you Volatic Academy for this amazing opportunity. you guys rock!"
             />
 
             <TestiCard2 
-                image={dan}
-                name="Princewill Ibekwe"
-                title="Product Designer"
-                quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa, adipisci aliquid corporis consectetur deleniti perspiciatis minima provident tempore earum et dolorem accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa."
+                image={stu2}
+                name="Sunday Osatehinse"
+                title="Software Engineer"
+                quote="Volatic Academy is one of the best institute to learn Software Engineering in Nigeria. Instructors are very supportive and friendly. I got to learn many things regarding coding. Thank you for building my career."
             />
 
             <TestiCard 
-                image={dan}
-                name="Sunday Osatehinse"
+                image={stu3}
+                name="Michael Makanjuola"
                 title="Software Engineer"
-                quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa, adipisci aliquid corporis consectetur deleniti perspiciatis minima provident tempore earum et dolorem accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa."
+                quote="Volatic Academy is an academy set upon the hill, a centre of excellence, which has so far, remained the best software teaching Academy. I've learnt to explore my abilities and how to apply knowlegde and coding into real life situations. The Academy will produce more notable Engineers who will global"
             />
 
             <TestiCard2 
-                image={dan}
+                image={stu4}
                 name="Princewill Ibekwe"
                 title="Product Designer"
-                quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa, adipisci aliquid corporis consectetur deleniti perspiciatis minima provident tempore earum et dolorem accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae consequuntur neque eos, commodi quis repellat culpa."
+                quote="I've always had passion for design, but I did't quite fit in or understand in places I have been to. At Volatic Academy, I fit in quite well. The classes are explain to the bearest minimum of understanding. The Instructors give personl attention to individuals. The encouragement and inspiration talks is top notch. You need to be here, if you want a career in Tech."
             />
 
           </div>
