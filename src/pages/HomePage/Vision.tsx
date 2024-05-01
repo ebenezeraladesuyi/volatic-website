@@ -59,15 +59,7 @@ const Vision = () => {
                         </h5>
 
                         <h6>
-                            In less technological-oriented areas where access to quality education and technology is limited, our vision is to break down barriers and provide every young person with the opportunity to thrive in the digital age. We envision a future where rural youth are equipped with the skills, knowledge, and confidence to pursue rewarding careers in technology, regardless of their background or financial means.
-                        </h6>
-
-                        <h6>
-                            By offering free and accessible technology education programs, we aim to empower rural youth to unleash their full potential and become catalysts for positive change in their communities. Our vision is to create a supportive and inclusive learning environment where every student is inspired to dream big and pursue their passions in the ever-evolving field of technology.
-                        </h6>
-
-                        <h6>
-                            Through our commitment to equity and inclusion, we aspire to bridge the digital divide and ensure that no rural youth is left behind in the digital revolution. By nurturing talent, fostering innovation, and cultivating a culture of lifelong learning, we believe that rural communities can thrive and prosper in the digital economy of the future.
+                            In less technological-oriented areas where access to quality education and technology is limited, our vision is to break down barriers and provide every young person with the opportunity to thrive in the digital age, and to create a supportive and inclusive learning environment where every student is inspired to dream big. By nurturing talent, fostering innovation, and cultivating a culture of lifelong learning, we believe every student can thrive and prosper in the digital economy of the future.
                         </h6>
                     </div>
                 </div>
