@@ -35,6 +35,7 @@ export const Store = configureStore({
 
 export const UseAppDispatch: () => typeof Store.dispatch = useDispatch;
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAppSelector: TypedUseSelectorHook<
   ReturnType<typeof Store.getState>
 > = useSelector;
