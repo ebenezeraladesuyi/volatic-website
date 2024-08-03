@@ -2,10 +2,11 @@ import React from "react";
 import forexImg from "../../assets/forex/vol-forex.png";
 import { iForex } from "../../types/interface";
 import axios from "axios";
-import Swal from 'sweetalert2';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { url2 } from "../../utils/Api";
 import { DatasIsaLoading } from "../isLoading/DataIsLoading";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -19,7 +20,7 @@ const ForexRegister = () => {
 
     const [loading, setLoading] = React.useState(false)
     const [error, setError] = React.useState<string | null>()
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     // register Forex
     const handleSubmit = async (e: React.FormEvent) => {
@@ -38,16 +39,13 @@ const ForexRegister = () => {
             })
             setError(null)
 
-            if (forexData.data) {
-                Swal.fire({
-                  title: "Registration Successful",
-                  text: "Thank You for registering. We will reach out to you via email or call.",
-                  icon: "success",
-                });
-                navigate("/");
-              }
+            toast.success("Registration successfull")
+            // navigate("/");
+            
         } catch (error) {
             console.error("Error with registration. Please, try again.")
+
+            toast.error("Error while registering. Please, try again")
         } finally {
             setLoading(false)
         }
@@ -69,26 +67,26 @@ const ForexRegister = () => {
                     <form onSubmit={handleSubmit} className="w-full border-white border-[1px] p-4 rounded-md text-white flex flex-col gap-6" action="">
                         <span className="font-bold text-center ">Enter Details</span>
 
-                        <input type="text"  placeholder="FullName" className="w-full h-[45px] p-2 pl-3 border-white border-[1px] rounded-md  bg-transparent text-white text-[14px] md:text-[16px]" 
+                        <input type="text"  placeholder="FullName" className="w-full h-[45px] p-2 pl-3 border-white border-[1px] rounded-md  bg-transparent text-white text-[14px] md:text-[16px] outline-none" 
                         name="fullName"
                         value={formData.fullName}
                         onChange={handleChange}
                         />
 
-                        <input type="email"  placeholder="Email" className="w-full h-[45px] p-2 pl-3 border-white border-[1px] rounded-md  bg-transparent text-white text-[14px] md:text-[16px]"  
+                        <input type="email"  placeholder="Email" className="w-full h-[45px] p-2 pl-3 border-white border-[1px] rounded-md  bg-transparent text-white text-[14px] md:text-[16px] outline-none"  
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
                         />
 
-                        <input type="text"  placeholder="Phone Number" className="w-full h-[45px] p-2 pl-3 border-white border-[1px] rounded-md  bg-transparent text-white text-[14px] md:text-[16px]"  
+                        <input type="text"  placeholder="Phone Number" className="w-full h-[45px] p-2 pl-3 border-white border-[1px] rounded-md  bg-transparent text-white text-[14px] md:text-[16px] outline-none"  
                         name="phoneNumber"
                         value={formData.phoneNumber}
                         onChange={handleChange}
                         />
 
                         { loading? (
-                            <div className="">
+                            <div className="flex justify-center items-center">
                                 <DatasIsaLoading />
                             </div>
                          ) : (

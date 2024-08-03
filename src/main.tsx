@@ -12,6 +12,7 @@ import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux/es/exports";
 import { Store } from './global/Store'
+import { ToastContainer } from 'react-toastify';
 // import { Store } from './hooks/Store'
 
 const myclient = new QueryClient();
@@ -36,6 +37,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             </QueryClientProvider>
           </PersistGate>
         </Provider>
+        <ToastContainer />
     </Suspense>
   </React.StrictMode>,
 )
