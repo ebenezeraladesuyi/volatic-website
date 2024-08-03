@@ -11,3 +11,9 @@ export interface user {
     emergencyContactRelationship: string;
     emergencyContactNumber: string;
   }
+
+  export interface iForex {
+    fullName: string;
+    email: string;
+    phoneNumber: string;
+  }

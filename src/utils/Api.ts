@@ -2,7 +2,10 @@ import axios from "axios";
 import { user } from "../types/interface";
 
 
-const url = "https://volatic-reg-be.onrender.com/volatic"
+export const url = "https://volatic-reg-be.onrender.com/volatic"
+
+export const url2 = "https://volatic-reg-be.onrender.com/forex"
+
 
 
  

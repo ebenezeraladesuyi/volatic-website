@@ -87,7 +87,7 @@ const Testimonies = () => {
                 image={stu1}
                 name="Olofinte Joseph"
                 title="Software Engineer"
-                quote="I am so glad a disovered Volatic Academy when starting my journey nto Software Engineering. For real, no other place compares. The environment fosters growth and the instructors are kind, taking their time to expalain complex concepts. Thank you Volatic Academy for this amazing opportunity. you guys rock!"
+                quote="I am so glad a discovered Volatic Academy when starting my journey nto Software Engineering. For real, no other place compares. The environment fosters growth and the instructors are kind, taking their time to expalain complex concepts. Thank you Volatic Academy for this amazing opportunity. you guys rock!"
             />
 
             <TestiCard2 

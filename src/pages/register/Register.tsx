@@ -223,7 +223,7 @@ const Register = () => {
                 (
                     <div className="flex justify-center items-center mb-[10px] ">
                         <button className="flex justify-center items-center lg:w-full lg:border-[1px] rounded bg-gradient-to-r from-[#fe34b9] to-[#903aff] cursor-pointer text-white text-[13px] h-[40px] hover:border-white" type="submit" >
-                            Register Now
+                            Register Now 
                         </button>
                     </div>
                 )

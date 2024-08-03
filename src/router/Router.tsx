@@ -8,6 +8,8 @@ import CoursesLayout from "../layout/CoursesLayout";
 import RegisterPageLayout from "../layout/RegisterLayout";
 import WhyLayout from "../layout/WhyLayout";
 import DownloadDocsLayout from "../layout/DownloadDocsLayout";
+// import ForexRegister from "../pages/forex/ForexRegister";
+import ForexLayout from "../layout/ForexLayout";
 // import DownloadFile from "../pages/download/Docs";
 // import WhyVolatic from "../pages/whyVolatic/WhyVolatic";
 // import Register from "../pages/register/Register";
@@ -21,6 +23,7 @@ const CourseComp = lazy(() => import("../pages/courses/CourseComp"));
 const Register = lazy(() => import("../pages/register/Register"));
 const WhyVolatic = lazy(() => import("../pages/whyVolatic/WhyVolatic"));
 const DownloadFile = lazy(() => import("../pages/download/Docs"));
+const ForexRegister = lazy(() => import("../pages/forex/ForexRegister"));
 
 
 export const element = createBrowserRouter([
@@ -81,6 +84,16 @@ export const element = createBrowserRouter([
             {
                 index: true,
                 element: <DownloadFile />
+            }
+        ]
+    },
+    {
+        path: "/forex",
+        element: <ForexLayout />,
+        children: [
+            {
+                index: true,
+                element: <ForexRegister />
             }
         ]
     },
