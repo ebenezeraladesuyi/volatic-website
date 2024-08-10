@@ -5,8 +5,11 @@ import { NavLink } from "react-router-dom";
 const ForexHome = () => {
 
     return (
-        <div className="w-full min-h-[50vh] bg-forex-bg bg-cover bg-center flex justify-center items-center py-[20px]">
-            <div className="w-[90%] md:w-[65%] lg:w-[50%] text-white flex flex-col justify-center items-center gap-4">
+        <div className="w-full min-h-[50vh] bg-forex-bg bg-cover bg-center flex justify-center items-center py-[20px] relative">
+
+            <div className="absolute w-full h-full top-0 left-0 bg-[#0000009a]"></div>
+
+            <div className="w-[90%] md:w-[65%] lg:w-[50%] text-white flex flex-col justify-center items-center gap-4 z-20">
                 <h2 className="text-[14px] lg:text-[18px] text-center font-bold">
                     Are you a Professional Worker, a Corp Member, a Student or a person who needs another stream of income?
                 </h2>
