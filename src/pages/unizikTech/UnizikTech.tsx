@@ -1,5 +1,5 @@
 import React from "react";
-import forexImg from "../../assets/unizik/unizikTech.jpg";
+import forexImg from "../../assets/unizik/unizik.jpg";
 import { iForex } from "../../types/interface";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";

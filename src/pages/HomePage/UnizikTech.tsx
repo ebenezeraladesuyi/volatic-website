@@ -1,6 +1,6 @@
 
 import { NavLink } from 'react-router-dom';
-import unizik from '../../assets/unizik/unizikTech.jpg';
+import unizik from '../../assets/unizik/unizik.jpg';
 
 const UnizikTechHome = () => {
 
