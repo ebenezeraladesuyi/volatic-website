@@ -13,7 +13,7 @@ const ForexHome = () => {
 
                 <h1 className="text-[30px] text-center font-bold border-[1px] border-white p-2">Join Our 8-Weeks Forex Trading Class</h1>
 
-                <h3 className="text-[18px] text-center font-bold">
+                <h3 className="text-[14px] md:text-[18px] text-center font-bold">
                     As you make money from anywhere you are, and right on your phone. We will teach Forex money management, risk management, trading decisons, signals etc.
                 </h3>
 
