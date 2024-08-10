@@ -27,7 +27,7 @@ const DownloadFile = () => {
   };
 
   return (
-    <div className="font-pop w-full h-screen flex justify-center items-center">
+    <div className="font-pop w-full h-screen flex justify-center items-center bg-white">
       <div className="w-[90%] md:w-[60%] lg:w-[45%] flex flex-col justify-center items-center gap-4 lg:gap-6">
         <div className="text-[#00afef] text-[140px] md:text-[200px] ">
           <IoCloudDownloadSharp />

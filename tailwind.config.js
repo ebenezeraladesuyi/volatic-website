@@ -14,6 +14,7 @@ export default {
         'hero-bg' : "url('/src/assets/images/hero-volatic.png')",
         'mobile-bg' : "url('/src/assets/images/vol-mobile-bg.avif')",
         'bg2' : "url('/src/assets/images/bg2.jpg')",
+        'forex-bg' : "url('/src/assets/forex/forex.jpg')",
       }
     },
   },

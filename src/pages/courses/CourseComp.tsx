@@ -5,7 +5,7 @@ import Explore from "./Explore"
 
 const CourseComp = () => {
   return (
-    <div>
+    <div className="bg-white">
         <Explore />
         <Courseoutline />
     </div>

@@ -1,8 +1,8 @@
 import React from "react";
-import forexImg from "../../assets/forex/vol-forex.png";
+import forexImg from "../../assets/unizik/unizikTech.jpg";
 import { iForex } from "../../types/interface";
 import axios from "axios";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { url } from "../../utils/Api";
 import { DatasIsaLoading } from "../isLoading/DataIsLoading";
 import { toast } from 'react-toastify';
@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-const ForexRegister = () => {
+const UnizikTech = () => {
 
     const [formData, setFormData] = React.useState<iForex>({
         fullName: "",
@@ -20,14 +20,14 @@ const ForexRegister = () => {
 
     const [loading, setLoading] = React.useState(false)
     const [error, setError] = React.useState<string | null>()
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     // register Forex
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
         setLoading(true)
         try {
-            const forexData = await axios.post(`${url}/forex/registerforex`, formData)
+            const forexData = await axios.post(`${url}/unizik/registerunizik`, formData)
 
             console.log("registetion successful", forexData.data)
 
@@ -40,7 +40,7 @@ const ForexRegister = () => {
             setError(null)
 
             toast.success("Registration successfull")
-            // navigate("/");
+            navigate("/");
             
         } catch (error) {
             console.error("Error with registration. Please, try again.")
@@ -59,13 +59,13 @@ const ForexRegister = () => {
     return (
         <div className="w-full min-h-screen bg-[#150E28] flex justify-center items-center pt-[100px] md:pt-[70px] pb-[30px]">
             <div className="w-[90%] flex flex-col md:flex-row justify-center md:justify-between items-center gap-5 md:gap-0">
-                <div className="w-full md:w-[50%]">
+                <div className="w-full md:w-[45%]">
                     <img className="w-full" src={forexImg} alt="" />
                 </div>
 
                 <div className="w-full md:w-[48%] lg:w-[40%]">
                     <form onSubmit={handleSubmit} className="w-full border-white border-[1px] p-4 rounded-md text-white flex flex-col gap-6" action="">
-                        <span className="font-bold text-center ">Enter Details</span>
+                        <span className="font-bold text-center animate-bounce">Register</span>
 
                         <input type="text"  placeholder="FullName" className="w-full h-[45px] p-2 pl-3 border-white border-[1px] rounded-md  bg-transparent text-white text-[14px] md:text-[16px] outline-none" 
                         name="fullName"
@@ -101,4 +101,4 @@ const ForexRegister = () => {
     )
 }
 
-export default ForexRegister;
+export default UnizikTech;

@@ -53,7 +53,7 @@ const Hero = () => {
                 Launch your Tech journey with Volatic Academy where innovation meets education.
             </motion.h4>
 
-            <NavLink to="/forex">
+            <NavLink to="/register">
                 <motion.button className="w-[160px] mt-[20px] bg-[#00AFEF]  hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out text-white" 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

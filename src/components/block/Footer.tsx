@@ -6,7 +6,7 @@ import { MdAttachEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[60vh pt-[30px] bg- flex flex-col justify-center items-center font-pop shadow-md">
+    <div className="w-full h-[60vh pt-[30px] bg- flex flex-col justify-center items-center font-pop shadow-md  bg-white">
       <div className="w-[90%] flex flex-col md:flex-row gap-8 mb-[25px] md:mb-">
 
         <div className="flex flex-col gap-5 w-full md:w-[40%] ">
@@ -45,6 +45,8 @@ const Footer = () => {
           <h6 className="cursor-pointr">Product Strategy</h6>
           <h6 className="cursor-pointr">Creative Design</h6>
           <h6 className="cursor-pointr">Digital Marketing</h6>
+          <h6 className="cursor-pointr">Data Analysis</h6>
+          <h6 className="cursor-pointr">Forex Trading</h6>
           <h6 className="cursor-poiner">Professional Training</h6>
         </div>
 

@@ -4,7 +4,7 @@ import conImg from "../../assets/images/contact.png";
 
 const Contact = () => {
   return (
-    <div id="" className="w-full md:h-[100vh] flex flex-col justify-center items-center font-mont py-[30px] relative overflow-hidden">
+    <div id="" className="w-full md:h-[100vh] flex flex-col justify-center items-center font-mont py-[30px] relative overflow-hidden bg-white">
       <div className="w-[90%] z-10 flex flex-col md:flex-row justify-center md:justify-between items-center md:mt-[50px] lg:mt-[70px] gap-5 mt-[50px]">
 
         <div className="w-full md:w-[60%]">

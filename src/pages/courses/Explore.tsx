@@ -7,7 +7,7 @@ const Explore = () => {
             <h2 className="text-[20px] font-bold md:text-[30px] lg:text-[40px] text-[#50519f] animate-pulse">EXPLORE OUR COURSES</h2>
 
             <h5 className="text-[#00AFEF] w-[90%] md:w-[70%]">
-                Take a look through to see the various courses that will be taught when you specialise in any of our programs.
+                Take a look through to see the various courses that will be taught when you apply in any of our programs.
             </h5>
         </div>
     </div>
