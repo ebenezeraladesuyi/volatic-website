@@ -2,7 +2,7 @@ import React from "react";
 import forexImg from "../../assets/unizik/bootcamp.png";
 import { iUnizikBoot } from "../../types/interface";
 import axios from "axios";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { url2 } from "../../utils/Api";
 import { DatasIsaLoading } from "../isLoading/DataIsLoading";
 import { toast } from 'react-toastify';
@@ -22,7 +22,7 @@ const UnizikTech = () => {
 
     const [loading, setLoading] = React.useState(false)
     const [error, setError] = React.useState<string | null>()
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     // register Forex
     const handleSubmit = async (e: React.FormEvent) => {
@@ -43,7 +43,7 @@ const UnizikTech = () => {
             setError(null)
 
             toast.success("Registration successfull")
-            // navigate("/");
+            navigate("/bootcamp/success");
             
         } catch (error) {
             console.error("Error with registration. Please, try again.")

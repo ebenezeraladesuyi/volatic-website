@@ -19,6 +19,7 @@ const WhyVolatic = lazy(() => import("../pages/whyVolatic/WhyVolatic"));
 const DownloadFile = lazy(() => import("../pages/download/Docs"));
 const ForexRegister = lazy(() => import("../pages/forex/ForexRegister"));
 const UnizikTech = lazy(() => import("../pages/unizikTech/UnizikTech"));
+const RegSuccess = lazy(() => import("../pages/unizikTech/RegSuccess"));
 
 
 export const element = createBrowserRouter([
@@ -99,6 +100,10 @@ export const element = createBrowserRouter([
             {
                 index: true,
                 element: <UnizikTech />
+            },
+            {
+                path: "success",
+                element: <RegSuccess />
             }
         ]
     },
