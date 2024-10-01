@@ -4,6 +4,8 @@ import { user } from "../types/interface";
 
 export const url = "https://volatic-reg-be.onrender.com"
 
+export const url2 = "https://volaticreg-be.onrender.com"
+
 
 
  

@@ -15,6 +15,7 @@ export default {
         'mobile-bg' : "url('/src/assets/images/vol-mobile-bg.avif')",
         'bg2' : "url('/src/assets/images/bg2.jpg')",
         'forex-bg' : "url('/src/assets/forex/forex.jpg')",
+        'boot-bg' : "url('/src/assets/bg/blog-bg.jpg')",
       }
     },
   },

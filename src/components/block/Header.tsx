@@ -46,9 +46,9 @@ const Header = () => {
                     </div>
 
                     <NavLink to="/register">
-                        <button className=' px-4 py-2 bg-[#00AFEF] border-none hover:bg-[#50519f] text-white font-semibold animate-puls ml-[50px] rounded-[60px] transition-all duration-300 ease-in-out '>
+                        {/* <button className=' px-4 py-2 bg-[#00AFEF] border-none hover:bg-[#50519f] text-white font-semibold animate-puls ml-[50px] rounded-[60px] transition-all duration-300 ease-in-out ' >
                             Apply Now
-                        </button>
+                        </button> */}
                     </NavLink>
                 </li>
 
@@ -95,9 +95,9 @@ const Header = () => {
                     </NavLink>
 
                     <NavLink to="/register">
-                        <button className=' w-[120px] px- py-3 bg-white border-none hover:text-[#3d82b3] text-[#00AFEF] font-semibold animate-puls rounded-[60px] transition-all duration-300 ease-in-out hover:px-5 hover:py-4'>
+                        {/* <button className=' w-[120px] px- py-3 bg-white border-none hover:text-[#3d82b3] text-[#00AFEF] font-semibold animate-puls rounded-[60px] transition-all duration-300 ease-in-out hover:px-5 hover:py-4'>
                             Apply Now
-                        </button>
+                        </button> */}
                     </NavLink>
                 {/* </li> */}
                 </div>

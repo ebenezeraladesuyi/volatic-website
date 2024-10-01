@@ -17,3 +17,10 @@ export interface user {
     email: string;
     phoneNumber: string;
   }
+
+  export interface iUnizikBoot {
+    fullName: string;
+    email: string;
+    phoneNumber: string;
+    skill: string;
+  }

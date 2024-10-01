@@ -1,46 +1,49 @@
 import React from "react";
-import forexImg from "../../assets/unizik/unizik.jpg";
-import { iForex } from "../../types/interface";
+import forexImg from "../../assets/unizik/bootcamp.png";
+import { iUnizikBoot } from "../../types/interface";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import { url } from "../../utils/Api";
+// import { useNavigate } from "react-router-dom";
+import { url2 } from "../../utils/Api";
 import { DatasIsaLoading } from "../isLoading/DataIsLoading";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+// import ImageUpload from "./ImageUpload";
 
 
 
 const UnizikTech = () => {
 
-    const [formData, setFormData] = React.useState<iForex>({
+    const [formData, setFormData] = React.useState<iUnizikBoot>({
         fullName: "",
         email: "",
         phoneNumber: "",
+        skill: "",
     })
 
     const [loading, setLoading] = React.useState(false)
     const [error, setError] = React.useState<string | null>()
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     // register Forex
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
         setLoading(true)
         try {
-            const forexData = await axios.post(`${url}/unizik/registerunizik`, formData)
+            const forexData = await axios.post(`${url2}/unizikboot/registerbootunizik`, formData)
 
-            console.log("registetion successful", forexData.data)
+            console.log("registration successful", forexData.data)
 
             // reset formData
             setFormData({
                 fullName: "", 
                 email: "", 
-                phoneNumber: ""
+                phoneNumber: "",
+                skill: ""
             })
             setError(null)
 
             toast.success("Registration successfull")
-            navigate("/");
+            // navigate("/");
             
         } catch (error) {
             console.error("Error with registration. Please, try again.")
@@ -51,13 +54,13 @@ const UnizikTech = () => {
         }
     }
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
         setFormData({...formData, [name]: value})
     }
     
     return (
-        <div className="w-full min-h-screen bg-[#150E28] flex justify-center items-center pt-[100px] md:pt-[70px] pb-[30px]">
+        <div className="w-full min-h-screen bg-[#150E28] flex flex-col justify-center items-center pt-[100px] md:pt-[70px] pb-[30px]">
             <div className="w-[90%] flex flex-col md:flex-row justify-center md:justify-between items-center gap-5 md:gap-0">
                 <div className="w-full md:w-[45%]">
                     <img className="w-full" src={forexImg} alt="" />
@@ -85,6 +88,24 @@ const UnizikTech = () => {
                         onChange={handleChange}
                         />
 
+                        
+                        {/* <div className="w-full"> */}
+                            {/* <h5 className="text-white text-[12px]">Select Skill</h5> */}
+                            <select className="bg-transparent border-white border-[1px] pl-[7px] pr-[5px] w-full h-[50px] rounded text-[14px] md:text-[16px] text-blue-400 mb-[15px outline-none"
+                            // {...register('skill')}
+                                name="skill"
+                                value={formData.skill}
+                                onChange={handleChange}
+                            >
+                                <option value="">Select Skill</option>
+                                <option value="Coding">Coding</option>
+                                <option value="UI-UX-Design">UI/UX Design</option>
+                                <option value="Graphics-Design">Graphics Design</option>
+                                <option value="Data-Analysis">Data Analysis</option>
+                            </select>
+                            {/* <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.skill && errors.skill.message}</p> */}
+                        {/* </div> */}
+
                         { loading? (
                             <div className="flex justify-center items-center">
                                 <DatasIsaLoading />
@@ -97,6 +118,10 @@ const UnizikTech = () => {
                     </form>
                 </div>
             </div>
+
+            {/* <div className="w-[90%] mt-[40px]">
+                <ImageUpload />
+            </div> */}
         </div>
     )
 }
