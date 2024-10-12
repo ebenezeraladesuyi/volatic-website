@@ -94,7 +94,7 @@ export const element = createBrowserRouter([
         ]
     },
     {
-        path: "/bootcamp",
+        path: "/bootcam",
         element: <UnizikLayout />,
         children: [
             {
