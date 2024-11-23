@@ -1,9 +1,9 @@
 import React from "react";
-import forexImg from "../../assets/unizik/bootcamp.png";
-import { iUnizikBoot } from "../../types/interface";
+import forexImg from "../../assets/fuoye/volatic-conf-new.png";
+import { iForex } from "../../types/interface";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { url2 } from "../../utils/Api";
+import { url } from "../../utils/Api";
 import { DatasIsaLoading } from "../isLoading/DataIsLoading";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -13,11 +13,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const UnizikTech = () => {
 
-    const [formData, setFormData] = React.useState<iUnizikBoot>({
+    const [formData, setFormData] = React.useState<iForex>({
         fullName: "",
         email: "",
         phoneNumber: "",
-        skill: "",
+        // skill: "",
     })
 
     const [loading, setLoading] = React.useState(false)
@@ -29,7 +29,7 @@ const UnizikTech = () => {
         e.preventDefault()
         setLoading(true)
         try {
-            const forexData = await axios.post(`${url2}/unizikboot/registerbootunizik`, formData)
+            const forexData = await axios.post(`${url}/unizik/registerunizik`, formData)
 
             console.log("registration successful", forexData.data)
 
@@ -38,12 +38,12 @@ const UnizikTech = () => {
                 fullName: "", 
                 email: "", 
                 phoneNumber: "",
-                skill: ""
+                // skill: ""
             })
             setError(null)
 
             toast.success("Registration successfull")
-            navigate("/bootcamp/success");
+            navigate("/fuoye/success");
             
         } catch (error) {
             console.error("Error with registration. Please, try again.")
@@ -54,7 +54,9 @@ const UnizikTech = () => {
         }
     }
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement  
+        // | HTMLSelectElement
+        >) => {
         const { name, value } = e.target;
         setFormData({...formData, [name]: value})
     }
@@ -91,18 +93,18 @@ const UnizikTech = () => {
                         
                         {/* <div className="w-full"> */}
                             {/* <h5 className="text-white text-[12px]">Select Skill</h5> */}
-                            <select className="bg-transparent border-white border-[1px] pl-[7px] pr-[5px] w-full h-[50px] rounded text-[14px] md:text-[16px] text-blue-400 mb-[15px outline-none"
+                            {/* <select className="bg-transparent border-white border-[1px] pl-[7px] pr-[5px] w-full h-[50px] rounded text-[14px] md:text-[16px] text-blue-400 mb-[15px outline-none"
                             // {...register('skill')}
-                                name="skill"
-                                value={formData.skill}
-                                onChange={handleChange}
-                            >
+                                // name="skill"
+                                // value={formData.skill}
+                                // onChange={handleChange}
+                            // >
                                 <option value="">Select Skill</option>
                                 <option value="Coding">Coding</option>
                                 <option value="UI-UX-Design">UI/UX Design</option>
                                 <option value="Graphics-Design">Graphics Design</option>
                                 <option value="Data-Analysis">Data Analysis</option>
-                            </select>
+                            {/* </select>
                             {/* <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.skill && errors.skill.message}</p> */}
                         {/* </div> */}
 

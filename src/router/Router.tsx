@@ -94,7 +94,7 @@ export const element = createBrowserRouter([
         ]
     },
     {
-        path: "/bootcam",
+        path: "/fuoye",
         element: <UnizikLayout />,
         children: [
             {
