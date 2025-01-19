@@ -1,6 +1,6 @@
 import React from "react";
-import forexImg from "../../assets/fuoye/volatic-conf-new.png";
-import { iForex } from "../../types/interface";
+import forexImg from "../../assets/fuoye/project200.png";
+import { iUnizikBoot } from "../../types/interface";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { url } from "../../utils/Api";
@@ -13,11 +13,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const UnizikTech = () => {
 
-    const [formData, setFormData] = React.useState<iForex>({
+    const [formData, setFormData] = React.useState<iUnizikBoot>({
         fullName: "",
         email: "",
         phoneNumber: "",
-        // skill: "",
+        skill: "",
     })
 
     const [loading, setLoading] = React.useState(false)
@@ -29,7 +29,7 @@ const UnizikTech = () => {
         e.preventDefault()
         setLoading(true)
         try {
-            const forexData = await axios.post(`${url}/unizik/registerunizik`, formData)
+            const forexData = await axios.post(`${url}/project200/registerproject200`, formData)
 
             console.log("registration successful", forexData.data)
 
@@ -38,12 +38,12 @@ const UnizikTech = () => {
                 fullName: "", 
                 email: "", 
                 phoneNumber: "",
-                // skill: ""
+                skill: ""
             })
             setError(null)
 
             toast.success("Registration successfull")
-            navigate("/fuoye/success");
+            navigate("/project200/success");
             
         } catch (error) {
             console.error("Error with registration. Please, try again.")
@@ -55,7 +55,7 @@ const UnizikTech = () => {
     }
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement  
-        // | HTMLSelectElement
+        | HTMLSelectElement
         >) => {
         const { name, value } = e.target;
         setFormData({...formData, [name]: value})
@@ -76,37 +76,41 @@ const UnizikTech = () => {
                         name="fullName"
                         value={formData.fullName}
                         onChange={handleChange}
+                        required
                         />
 
                         <input type="email"  placeholder="Email" className="w-full h-[45px] p-2 pl-3 border-white border-[1px] rounded-md  bg-transparent text-white text-[14px] md:text-[16px] outline-none"  
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
+                        required
                         />
 
                         <input type="text"  placeholder="Phone Number" className="w-full h-[45px] p-2 pl-3 border-white border-[1px] rounded-md  bg-transparent text-white text-[14px] md:text-[16px] outline-none"  
                         name="phoneNumber"
                         value={formData.phoneNumber}
                         onChange={handleChange}
+                        required
                         />
 
                         
-                        {/* <div className="w-full"> */}
+                        <div className="w-full">
                             {/* <h5 className="text-white text-[12px]">Select Skill</h5> */}
-                            {/* <select className="bg-transparent border-white border-[1px] pl-[7px] pr-[5px] w-full h-[50px] rounded text-[14px] md:text-[16px] text-blue-400 mb-[15px outline-none"
+                            <select className="bg-transparent border-white border-[1px] pl-[7px] pr-[5px] w-full h-[50px] rounded text-[14px] md:text-[16px] text-blue-400 mb-[15px outline-none"
                             // {...register('skill')}
-                                // name="skill"
-                                // value={formData.skill}
-                                // onChange={handleChange}
-                            // >
-                                <option value="">Select Skill</option>
+                                name="skill"
+                                value={formData.skill}
+                                onChange={handleChange}
+                                required
+                            >
+                                <option value="">Select Skill To Learn</option>
                                 <option value="Coding">Coding</option>
                                 <option value="UI-UX-Design">UI/UX Design</option>
                                 <option value="Graphics-Design">Graphics Design</option>
                                 <option value="Data-Analysis">Data Analysis</option>
-                            {/* </select>
+                            </select>
                             {/* <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.skill && errors.skill.message}</p> */}
-                        {/* </div> */}
+                        </div>
 
                         { loading? (
                             <div className="flex justify-center items-center">
