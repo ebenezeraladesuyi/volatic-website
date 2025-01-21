@@ -5,8 +5,8 @@ import { IoCheckmarkDoneCircle } from "react-icons/io5";
 
 const RegSuccess = () => {
   return (
-    <div className="w-full min-h-[100vh] flex justify-center items-center bg-center bg-cover bg-boot-bg">
-        <div className="w-[90%] md:w-[70%] lg:w-[50%] flex flex-col justify-center items-center gap-4 lg:gap-7">
+    <div className="w-full min-h-[100vh] flex justify-center items-center bg-center bg-cover bg-boot-bg font-mont">
+        <div className="w-[90%] md:w-[70%] lg:w-[50%] flex flex-col justify-center items-center gap-4 lg:gap-7 pb-[30px]">
             <div className="text-[150px] lg:text-[200px] text-white">
                 <IoCheckmarkDoneCircle />
             </div>
@@ -16,9 +16,30 @@ const RegSuccess = () => {
                 {/* Please, clcik on the button below to join the Whatsapp Community, where classes infprmation will be shared. */}
             </div>
 
-            <a href="https://chat.whatsapp.com/GfiMkJQQJaB8XhK0PD9sTH" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse">
-                Join Whatsapp Community
-            </a>
+            <hr className="w-[100%] border-[1px] border-white" />
+
+            <h1 className="text-[14px] text-white text-center">Click on a button of your selected skill to join the Telegram Community / Group</h1>
+
+            <div className="flex flex-col gap-3">
+                <div className="flex flex-col md:flex-row gap-3">
+                    <a href="https://t.me/+VXzrLhhdghE5ZTg0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
+                        Data Analysis
+                    </a>
+
+                    <a href="https://t.me/+Gpyc9j2uRLcyNGI0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
+                        Graphics Design
+                    </a>
+                </div>
+
+                <div className="flex flex-col md:flex-row gap-3">
+                    <a href="https://t.me/+C76g76EcVp8yMDk0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
+                    Web Development
+                    </a>
+                    <a href="https://t.me/+7_PgtTcALlBkMzVk" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
+                        UI/UX Design
+                    </a>
+                </div>
+            </div>
 
             {/* <NavLink to="/">
                 <button className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse">Explore Our Website</button>
