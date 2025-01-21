@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <motion.section className="w-full h-[100vh] overflow-hidden bg-mobile-bg md:bg-hero-bg md:bg-center bg-cover flex justify-center items-center"
+    <motion.section className="w-full h-[100vh] overflow-hidden bg-mobile-bg md:bg-hero-bg md:bg-center bg-cover bg-fixed flex justify-center items-center"
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay: 0.2 }}
