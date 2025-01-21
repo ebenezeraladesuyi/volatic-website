@@ -22,20 +22,20 @@ const RegSuccess = () => {
 
             <div className="flex flex-col gap-3">
                 <div className="flex flex-col md:flex-row gap-3">
-                    <a href="https://t.me/+VXzrLhhdghE5ZTg0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
+                    <a href="https://t.me/+Q_3WuXZ7sDNlZjA0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
                         Data Analysis
                     </a>
 
-                    <a href="https://t.me/+Gpyc9j2uRLcyNGI0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
+                    <a href="https://t.me/+jMXGC02Gjnk5Zjg0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
                         Graphics Design
                     </a>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-3">
-                    <a href="https://t.me/+C76g76EcVp8yMDk0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
+                    <a href="https://t.me/+5AkwBFo2wnM1MDE0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
                     Web Development
                     </a>
-                    <a href="https://t.me/+7_PgtTcALlBkMzVk" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
+                    <a href="https://t.me/+Po0MFu8P5KA2Njg0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
                         UI/UX Design
                     </a>
                 </div>
