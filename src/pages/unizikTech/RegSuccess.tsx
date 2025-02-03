@@ -26,9 +26,9 @@ const RegSuccess = () => {
                         Data Analysis
                     </a>
 
-                    <a href="https://t.me/+jMXGC02Gjnk5Zjg0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
+                    {/* <a href="https://t.me/+jMXGC02Gjnk5Zjg0" className="p-2 bg-blue-400 text-white px-5 rounded-[30px] hover:bg-[#3e4095] border-none  transition-all duration-500 ease-in-out animate-pulse text-center">
                         Graphics Design
-                    </a>
+                    </a> */}
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-3">
