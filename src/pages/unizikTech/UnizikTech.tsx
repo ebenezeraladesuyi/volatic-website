@@ -104,7 +104,7 @@ const UnizikTech = () => {
                                 required
                             >
                                 <option value="">Select Skill To Learn</option>
-                                <option value="Coding">Coding</option>
+                                <option value="Coding">Coding / Web Development</option>
                                 <option value="UI-UX-Design">UI/UX Design</option>
                                 {/* <option value="Graphics-Design">Graphics Design</option> */}
                                 <option value="Data-Analysis">Data Analysis</option>
