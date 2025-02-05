@@ -106,7 +106,7 @@ const UnizikTech = () => {
                                 <option value="">Select Skill To Learn</option>
                                 <option value="Coding">Coding</option>
                                 <option value="UI-UX-Design">UI/UX Design</option>
-                                <option value="Graphics-Design">Graphics Design</option>
+                                {/* <option value="Graphics-Design">Graphics Design</option> */}
                                 <option value="Data-Analysis">Data Analysis</option>
                             </select>
                             {/* <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.skill && errors.skill.message}</p> */}
